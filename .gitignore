@@ -1,0 +1,9 @@
+# Ignore all .json.gz files in the datasets folder
+datasets/*.json.gz
+.ipynb_checkpoints/
+eval/*.json
+
+# Optional: ignore __pycache__ folders, temporary files, etc.
+__pycache__/
+*.pyc
+*.log
