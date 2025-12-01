@@ -4,7 +4,7 @@ from collections import defaultdict
 
 def readGz(path):
     # Open in text mode ('rt') with UTF-8 encoding for JSON lines
-    path = "datasets/" + path
+    path = "datasets2/" + path
     with gzip.open(path, 'rt', encoding='utf-8') as f:
         for l in f:
             # Safely parse each line as JSON
@@ -35,7 +35,7 @@ def load_user_likes(filename):
     """
     Load a user_likes JSON file back into a dict[user_id] = list of liked places.
     """
-    filename = "eval/"+filename
+    #filename = "eval/"+filename
     with open(filename, "r") as f:
         data = json.load(f)
 
